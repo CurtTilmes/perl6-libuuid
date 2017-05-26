@@ -25,7 +25,7 @@ Usage
 
     my $uuid = UUID.new;  # Create a new UUID
 
-    $uuid = UUID.new(Blob $myblob); # From existing blob of 16 bytes
+    $uuid = UUID.new($myblob); # From existing blob of 16 bytes
 
     $uuid = UUID.new('39ed750e-a1bf-4792-81d6-e098f01152d3'); # From Str
 
