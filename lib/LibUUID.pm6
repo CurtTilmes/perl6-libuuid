@@ -29,7 +29,7 @@ class UUID
     multi method new(Str $str)
     {
         my $bytes = buf8.allocate(16);
-        uuid_parse(($str~'\0').encode, $bytes) == 0 or fail "Bad UUID $str";
+        uuid_parse(($str~"\0").encode, $bytes) == 0 or fail "Bad UUID $str";
         self.bless(:$bytes);
     }
 
