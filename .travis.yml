@@ -8,10 +8,7 @@ perl6:
 
 sudo: true
 
-before_script:
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get update; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install libuuid1; fi
-
 install:
+  - sudo apt-get install libuuid1
   - rakudobrew build zef
   - zef install .
