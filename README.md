@@ -1,6 +1,8 @@
 LibUUID
 =======
 
+[![Build Status](https://travis-ci.org/CurtTilmes/perl6-libuuid.svg)](https://travis-ci.org/CurtTilmes/perl6-libuuid)
+
 Perl 6 bindings for [libuuid](https://libuuid.sourceforge.io/).
 
 This library creates Universally Unique IDentifiers (UUID).
@@ -15,8 +17,11 @@ Installation
 ============
 
 This module depends on [libuuid](https://libuuid.sourceforge.io/), so
-it must be installed first.  Then install this module with `zef
-install LibUUID`.
+it must be installed first.
+
+For Linux ubuntu, try `sudo apt-get install uuid-dev`.
+
+Then install this module with `zef install LibUUID`.
 
 Usage
 =====
@@ -33,7 +38,7 @@ Usage
 
     say $uuid.Blob; # Blobify to Blob of 16 bytes
 
-SEE ALSO
+See Also
 ========
 
 [UUID](https://github.com/retupmoca/P6-UUID) is a Perl 6 native UUID
@@ -43,4 +48,3 @@ generator.
 On Linux machines, you can get UUIDs straight from the kernel:
 
     cat /proc/sys/kernel/random/uuid
-
