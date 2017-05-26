@@ -14,7 +14,7 @@
     "tags" : [ "UUID" ],
 
     "provides" : {
-        "UUID" : "lib/LibUUID.pm6"
+        "LibUUID" : "lib/LibUUID.pm6"
     },
 
     "depends" : [ "NativeCall" ],
