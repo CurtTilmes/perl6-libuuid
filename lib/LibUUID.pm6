@@ -2,7 +2,7 @@ use v6;
 
 use NativeCall;
 
-my constant LIBUUID = 'uuid'; # libuuid.so
+my constant LIBUUID = ('uuid', v1); # libuuid.so.1
 
 class UUID
 {

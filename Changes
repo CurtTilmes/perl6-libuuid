@@ -1,0 +1,5 @@
+v0.3  Previously tried to load libuuid.so which is usually a symbolic
+      link to libuuid.so.1, but is often not installed by default.
+      Changed to explicitly load libuuid.so.1
+
+      https://docs.perl6.org/language/nativecall#ABI/API_version
