@@ -1,8 +1,8 @@
-use v6;
-
 use NativeCall;
+use NativeLibs;
 
-my constant LIBUUID = ('uuid', v1); # libuuid.so.1
+my constant LIBUUID = NativeLibs::Searcher.at-runtime(
+   'uuid', 'uuid_generate', (1, Any));
 
 class UUID
 {

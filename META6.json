@@ -5,7 +5,7 @@
 
     "auth" : "github:CurtTilmes",
 
-    "version" : "0.3",
+    "version" : "0.4",
 
     "source-url" : "https://github.com/CurtTilmes/perl6-libuuid.git",
 
@@ -17,7 +17,7 @@
         "LibUUID" : "lib/LibUUID.pm6"
     },
 
-    "depends" : [ "NativeCall" ],
+    "depends" : [ "NativeCall", "NativeLibs" ],
 
     "test-depends" : [ "Test", "Test::When", "Test::META" ],
 
